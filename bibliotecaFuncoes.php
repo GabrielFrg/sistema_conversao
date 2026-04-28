@@ -1,27 +1,24 @@
 <?php
 
+namespace geometria{
 
-namespace conversao{
-
-    function dolarParaReal($valor, $cotacao){
-    return $valor * $cotacao;
+    function Quadrado ($lado);{
+    return $lado*$lado;
     }
+function Retangulo ($base,$altura);{
+    return $base*$altura;
+}
+function Triangulo ($base,$altura);{
+    return $base*$altura/2;
+}
+function Circulo ($raio);{
+    return 3.14*$raio**2;
+}
+function Trapesio ($basemaior,$basemenor,$altura);{
+    return $basemaior*$basemenor*$altura/2;
+}
 
-    function euroParaReal($valor, $cotacao){
-    return $valor * $cotacao;
-    }
 
-    function pesoParaReal($valor, $cotacao){
-    return $valor * $cotacao;
-    }
-
-    function libraParaReal($valor, $cotacao){
-    return $valor * $cotacao;
-    }
-
-    function ieneParaReal($valor, $cotacao){
-    return $valor * $cotacao;
-    }
 }
 
 ?>

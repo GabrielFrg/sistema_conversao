@@ -1,17 +1,16 @@
 <?php
-
 require_once "bibliotecaFuncoes.php";
 
-use function conversao\dolarParaReal;
-use function conversao\euroParaReal;
-use function conversao\pesoParaReal;
-use function conversao\libraParaReal;
-use function conversao\ieneParaReal;
+use function geometria\Quadrado;
+use function geometria\Retangulo;
+use function geometria\Triangulo;
+use function geometria\Circulo;
+use function geometria\Trapesio;
 
-echo "Valor do dolar", dolarParaReal(100, 5);
-echo "Valor do euro", euroParaReal(100, 5.83);
-echo "Valor do peso", pesoParaReal(100, 0.0035);
-echo "Valor da libra", libraParaReal(100, 6.72);
-echo "Valor do iene", ieneParaReal(100, 0.0031);
+echo "A area do Quadrado é: ", Quadrado(5);
+echo "A area do Retangulo é: ", Retangulo(5,10);
+echo "A area do Triangulo é: ", Triangulo(3,6);
+echo "A area do Circulo é: ", Circulo(8);
+echo "A area do Trapesio é: ", Trapesio(5,8,5);
 
 ?>
