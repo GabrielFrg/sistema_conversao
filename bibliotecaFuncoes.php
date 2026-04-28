@@ -1,5 +1,28 @@
 <?php
 
+namespace conversao{
+
+    function dolarParaReal($valor, $cotacao){
+    return $valor * $cotacao;
+    }
+
+    function euroParaReal($valor, $cotacao){
+    return $valor * $cotacao;
+    }
+
+    function pesoParaReal($valor, $cotacao){
+    return $valor * $cotacao;
+    }
+
+    function libraParaReal($valor, $cotacao){
+    return $valor * $cotacao;
+    }
+
+    function ieneParaReal($valor, $cotacao){
+    return $valor * $cotacao;
+    }
+}
+
 namespace geometria{
 
     function Quadrado ($lado){
@@ -18,9 +41,7 @@ function Trapesio ($basemaior,$basemenor,$altura){
     return $basemaior*$basemenor*$altura/2;
 }
 
-
 }
-
 namespace saude{
 
 function caucularimc($altura,$peso){
@@ -39,5 +60,4 @@ function calcularCaloriasBasais($peso,$altura,$idade, ){
     return 655 + $peso*9.6 + $altura*1.7 + $idade*4.7;
 }
 }
-
 ?>
